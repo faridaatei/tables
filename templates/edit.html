@@ -1,0 +1,25 @@
+{%extends 'layout.html'%}
+{%block content%}
+<body>
+ <div class="container">
+ <form action ="{{url_for('add')}}" method ="POST">
+ <div class="form-group">
+ <label for="val1">input value 1</label>
+ <input type="text" class="form-control" id="val1"
+ value="{{val1}}" placeholder="value 1" name="val1">
+ 
+ </div>
+ <div class="form-group">
+ <label for="val2">input value 2</label>
+ <input type="text" class="form-control" id="val2" 
+ value="{{val2}}"placeholder="value 2" name="val2">
+ </div>
+ <button type="submit" class="btn btn-primary">update</button>
+</form>
+</div>
+</body> 
+
+{%endblock%}
+
+
+
